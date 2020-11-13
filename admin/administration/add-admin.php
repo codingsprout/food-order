@@ -58,10 +58,10 @@ if(isset($_POST['submit'])) {
 	$res = mysqli_query($conn, $sql) or die(mysqli_error());
 
 	if($res == TRUE) {
-		$_SESSION['add'] = "Admin Created Successfully!";
+		$_SESSION['add'] = "<div class='success'>Admin Created Successfully!</div>";
 		header("location:".ADMINREDIRECT);
 	} else {
-		$_SESSION['add'] = "Something failed, try again...";
+		$_SESSION['add'] = "<div class='error'>Something failed, try again...</div>";
 	}
 } 
 

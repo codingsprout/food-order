@@ -25,6 +25,18 @@ a {
   clear: both;
 }
 
+.success {
+  color: #218c74;
+}
+
+.error {
+  color: #40407a;
+}
+
+.m1 {
+  margin: 1%;
+}
+
 /* button */
 
 .btn-prim {
@@ -42,10 +54,9 @@ a {
 .btn-update {
   background-color: #5758bb;
   color: #fff;
-  padding: 2%;
+  padding: 1%;
   border-radius: 20px;
   font-weight: 500;
-  margin-right: 20px;
 }
 
 .btn-update:hover {
@@ -56,12 +67,26 @@ a {
 .btn-delete {
   background-color: #ed4c67;
   color: #fff;
-  padding: 2%;
+  padding: 1%;
+  border-radius: 20px;
+  font-weight: 500;
+  margin: 1%;
+}
+
+.btn-delete:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.btn-password {
+  background-color: #ffa502;
+  color: #fff;
+  padding: 1%;
   border-radius: 20px;
   font-weight: 500;
 }
 
-.btn-delete:hover {
+.btn-password:hover {
   background-color: #fff;
   color: #000;
 }

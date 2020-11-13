@@ -6,6 +6,10 @@
 	define('DB_USERNAME', 'root');
 	define('DB_PASSWORD', '');
 	define('DB_NAME', 'food-order');
+
+	define('PASSWORDADMIN', 'http://localhost/food-order/admin/administration/password.php');
+	define('UPDATEADMIN', 'http://localhost/food-order/admin/administration/update-admin.php');
+	define('DELETEADMIN', 'http://localhost/food-order/admin/administration/delete-admin.php');
 	define('ADMINREDIRECT', 'http://localhost/food-order/admin/administration/administrator.php');
 
 	$conn = mysqli_connect(LOCALHOST, DB_USERNAME, DB_PASSWORD) or die(mysqli_error());

@@ -6,7 +6,7 @@
 		<h1>Admin</h1>
 
 		<br />
-		<a href="add-admin.php" class='btn-prim'>Manage Admin</a>
+		<a href="add-admin.php" class='btn-prim'>Add New Admin</a>
 
 		<br /><br />
 
@@ -15,10 +15,22 @@
 			if(isset($_SESSION['add'])) {
 				echo $_SESSION['add'];
 				unset($_SESSION['add']);
-		} 
+			}
+			if(isset($_SESSION['delete'])) {
+				echo $_SESSION['delete'];
+				unset($_SESSION['delete']);
+			}
+			if(isset($_SESSION['update'])) {
+				echo $_SESSION['update'];
+				unset($_SESSION['update']);
+			}
+			if(isset($_SESSION['pw-update-success'])) {
+				echo $_SESSION['pw-update-success'];
+				unset($_SESSION['pw-update-success']);
+			}
 		?>
 
-		<table class='tbl-full'>
+		<table class='tbl-full m1'>
 			<tr>
 				<th>ID #</th>
 				<th>Full name</th>
@@ -47,14 +59,17 @@
 				<td><?php echo $full_name ?></td>
 				<td><?php echo $username ?></td>
 				<td>
-					<a href="#" class="btn-update">Update</a>
-					<a href="#" class="btn-delete">Delete</a>
+					<a href="<?php echo PASSWORDADMIN ?>?id=<?php echo $id ?>" class="btn-password">Change Password</a>
+					<a href="<?php echo UPDATEADMIN ?>?id=<?php echo $id ?>" class="btn-update">Update Admin</a>
+					<a href="<?php echo DELETEADMIN ?>?id=<?php echo $id ?>" class="btn-delete">Delete Admin</a>
 				</td>
 			</tr>
 
 			<?php
 						}
 					}
+				} else {
+					echo "Something went horribly wrong!";
 				}
 
 			?>
