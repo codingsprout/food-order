@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* global config */
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  padding: 1%;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.txt-c {
+  text-align: center;
+}
+
+.fix {
+  float: none;
+  clear: both;
+}
+
+/* button */
+
+.btn-prim {
+  background-color: #e30b5d;
+  color: #000;
+  padding: 1%;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.btn-prim:hover {
+  background-color: #fff;
+}
+
+.btn-update {
+  background-color: #5758bb;
+  color: #fff;
+  padding: 2%;
+  border-radius: 20px;
+  font-weight: 500;
+  margin-right: 20px;
+}
+
+.btn-update:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.btn-delete {
+  background-color: #ed4c67;
+  color: #fff;
+  padding: 2%;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+.btn-delete:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.btn-create {
+  background-color: #e30b5d;
+  color: #000;
+  padding: 3%;
+  font-weight: 600;
+  width: 25%;
+}
+
+.btn-create:hover {
+  background-color: #fff;
+}
+
+/* table */
+.tbl-full {
+  width: 100%;
+}
+
+.tbl-30 {
+  width: 30%;
+}
+
+table tr th {
+  border-bottom: 1px solid #000;
+  padding: 1%;
+  text-align: left;
+}
+
+table tr td {
+  padding: 1%;
+}
+
+/* menu */
+
+.menu {
+  border-bottom: 1px solid #000;
+}
+
+.menu ul {
+  list-style-type: none;
+}
+
+.menu ul li {
+  display: inline;
+  padding: 1%;
+}
+
+.menu ul li a {
+  font-weight: 600;
+  color: #e96792;
+}
+
+/* main content */
+
+.main-content {
+  background-color: #f1f2f6;
+  padding: 3% 0;
+}
+
+.col-section {
+  width: 18%;
+  background-color: #fff;
+  margin: 1%;
+  padding: 2%;
+  float: left;
+}
+
+/* footer */
+
+.footer {
+  background-color: #e30b5d;
+  color: #000;
+}
