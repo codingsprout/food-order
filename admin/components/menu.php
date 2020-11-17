@@ -1,4 +1,7 @@
-<?php include('../config/config.php') ?>
+<?php 
+	include('../config/config.php');
+	include('../user/auth.php');
+?>
 
 <html>
 
@@ -18,6 +21,7 @@
 				<li><a href='../pages/category.php'>Category</a></li>
 				<li><a href='../pages/food.php'>Food</a></li>
 				<li><a href='../pages/order.php'>Order</a></li>
+				<li><a href='../user/logout.php'>Logout</a></li>
 			</ul>
 		</div>
 	</div>
