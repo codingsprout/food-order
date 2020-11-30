@@ -10,6 +10,23 @@
 				echo $_SESSION['add'];
 				unset($_SESSION['add']);
 			}
+			if(isset($_SESSION['remove'])) {
+				echo $_SESSION['remove'];
+				unset($_SESSION['remove']);
+			}
+			if(isset($_SESSION['delete'])) {
+				echo $_SESSION['delete'];
+				unset($_SESSION['delete']);
+			}
+			if(isset($_SESSION['no-category-found'])) {
+				echo $_SESSION['no-category-found'];
+				unset($_SESSION['no-category-found']);
+			}
+			if(isset($_SESSION['update'])) {
+				echo $_SESSION['update'];
+				unset($_SESSION['update']);
+			}
+			
 		?>
 
 		<br><br>
@@ -65,8 +82,9 @@
 				<td><?php echo $featured ?></td>
 				<td><?php echo $active ?></td>
 				<td>
-					<a href="#" class="btn-update">Update Category</a>
-					<a href="#" class="btn-delete">Delete Category</a>
+					<a href="<?php echo UPDATECATEGORY?>?id=<?php echo $id?>" class="btn-update">Update Category</a>
+					<a href="<?php echo DELETECATEGORY ?>?id=<?php echo $id ?>&image_name=<?php echo $image_name ?>"
+						class="btn-delete">Delete Category</a>
 				</td>
 			</tr>
 

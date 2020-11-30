@@ -7,6 +7,12 @@
 	define('DB_PASSWORD', '');
 	define('DB_NAME', 'food-order');
 
+	define('ADDFOOD', 'http://localhost/food-order/admin/food/add-food.php');
+	define('FOODREDIRECT', 'http://localhost/food-order/admin/food/food.php');
+	define('FOODIMAGE', 'http://localhost/food-order/admin/images/');
+
+	define('UPDATECATEGORY', 'http://localhost/food-order/admin/category/update-category.php');
+	define('DELETECATEGORY', 'http://localhost/food-order/admin/category/delete-category.php');
 	define('ADDCATEGORY', 'http://localhost/food-order/admin/category/add-category.php');
 	define('CATEGORYREDIRECT', 'http://localhost/food-order/admin/category/category.php');
 	define('CATEGORYIMAGE', 'http://localhost/food-order/admin/images/');

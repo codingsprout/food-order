@@ -79,18 +79,22 @@
 				if(isset($_FILES['image']['name'])) {
 
 					$imageName = $_FILES['image']['name'];
-					$ext = end(explode('.', $imageName));
-					$imageName = "Food_Image".rand(000,999).'.'.$ext;
+					
+					if($imageName != "") {
 
-					$sourcePath = $_FILES['image']['tmp_name'];
-					$destinationPath = '../images/'.$imageName;
-					$uploadImage = move_uploaded_file($sourcePath, $destinationPath);
-
-					if($uploadImage == false) {
-						$_SESSION['uploadImage'] = "<div class='error'>Something failed, try again...</div>";
-						die();
+						$ext = end(explode('.', $imageName));
+						$imageName = "Food_Image".rand(000,999).'.'.$ext;
+						
+						$sourcePath = $_FILES['image']['tmp_name'];
+						$destinationPath = '../images/'.$imageName;
+						$uploadImage = move_uploaded_file($sourcePath, $destinationPath);
+						
+						if($uploadImage == false) {
+							$_SESSION['uploadImage'] = "<div class='error'>Something failed, try again...</div>";
+							die();
+						}					
+						
 					}
-
 				} else {
 					$imageName = "";
 				}

@@ -19,7 +19,7 @@
 				<li><a href='../pages/index.php'>Home</a></li>
 				<li><a href='../administration/administrator.php'>Admin</a></li>
 				<li><a href='../category/category.php'>Category</a></li>
-				<li><a href='../pages/food.php'>Food</a></li>
+				<li><a href='../food/food.php'>Food</a></li>
 				<li><a href='../pages/order.php'>Order</a></li>
 				<li><a href='../user/logout.php'>Logout</a></li>
 			</ul>
