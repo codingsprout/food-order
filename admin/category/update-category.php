@@ -104,6 +104,7 @@
 					$image_name = $_FILES['image']['name'];
 
 					if($image_name != "") {
+						
 						$ext = end(explode('.', $image_name));
 						$image_name = "Food_Image".rand(000,999).'.'.$ext;
 						

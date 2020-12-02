@@ -7,6 +7,8 @@
 	define('DB_PASSWORD', '');
 	define('DB_NAME', 'food-order');
 
+	define('UPDATEFOOD', 'http://localhost/food-order/admin/food/update-food.php' );
+	define('DELETEFOOD', 'http://localhost/food-order/admin/food/delete-food.php');
 	define('ADDFOOD', 'http://localhost/food-order/admin/food/add-food.php');
 	define('FOODREDIRECT', 'http://localhost/food-order/admin/food/food.php');
 	define('FOODIMAGE', 'http://localhost/food-order/admin/images/');
